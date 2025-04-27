@@ -1,6 +1,7 @@
 import mountain from "../assets/projects/mountain.png"
 import fruit from "../assets/projects/fruitCatcher.png"
 import trashbin from "../assets/projects/trashbin.jfif"
+import bmi from "../assets/projects/bmi.png"
 
 export default [
     {
@@ -14,7 +15,7 @@ export default [
       title: "HikeMate",
       description:
         "A web application for managing mountain climbing tickets with user authentication and booking system.",
-      technologies: ["React.js", "Node.js", "Java Spring Boot", "PostgreSQL"],
+      technologies: ["Reactjs", "Nodejs", "Java Spring Boot", "PostgreSQL"],
       localImage: mountain ,
       externalLink: "https://hikemate-z9e6.vercel.app/"
     },
@@ -24,5 +25,12 @@ export default [
       technologies: ["Python", "MediaPipe", "OpenCV", "NumPy", "PyGame"],
       localImage: fruit ,
       externalLink: "https://github.com/wndxx/fruit-catcher"
+    },
+    {
+      title: "BMI Calculator",
+      description: "A bmi calculator web application.",
+      technologies: ["Javascript", "Bootstrap", "ReactJs"],
+      localImage: bmi ,
+      externalLink: "https://bmi-calculator-gamma-eosin-82.vercel.app/"
     },
   ];

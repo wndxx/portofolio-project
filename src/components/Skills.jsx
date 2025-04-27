@@ -6,7 +6,7 @@ import ProfessionalSkillItem from "./ProfessionalSkillItem";
 export default function Skills() {
   return (
     <section className="mb-12">
-      <h2 className="text-2xl font-bold mb-8 text-center dark:text-white">
+      <h2 className="text-2xl font-bold mb-8 text-center dark:text-white border-b pb-2">
         My <span className="text-primary-500">Skills</span>
       </h2>
       

@@ -1,4 +1,6 @@
 import { Mail, Phone, Github, Linkedin, Download } from "lucide-react";
+import cvEN from '../assets/cv/eng.pdf';
+import cvID from '../assets/cv/ind.pdf';
 
 export default function Contact() {
   const contactItems = [
@@ -16,9 +18,20 @@ export default function Contact() {
     },
   ];
 
+  const handleDownload = (fileUrl, fileName) => {
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section>
-      <h2 className="text-2xl font-bold mb-6 border-b pb-2">Get In Touch</h2>
+      <h2 className="text-2xl font-bold mb-8 text-center dark:text-white border-b pb-2">
+        Get <span className="text-primary-500">In Touch</span>
+      </h2>
       <div className="grid md:grid-cols-2 gap-8">
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
@@ -42,15 +55,33 @@ export default function Contact() {
             ))}
           </div>
         </div>
-        {/* <div>
-          <h3 className="text-xl font-semibold mb-4">Download Resume</h3>
-          <div className="p-6 rounded-lg bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center transition-colors duration-300">
-            <Download size={48} className="mb-4 text-primary-500" />
-            <button className="px-6 py-3 rounded-lg font-medium bg-primary-500 hover:bg-primary-600 text-white transition">
-              Download CV (PDF)
-            </button>
+        
+        <div className="md:col-span-2 grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Download Resume (English)</h3>
+            <div className="p-6 rounded-lg bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center transition-colors duration-300">
+              <Download size={48} className="mb-4 text-primary-500" />
+              <button 
+                onClick={() => handleDownload(cvEN, 'Windi_Saputra_Resume_EN.pdf')}
+                className="px-6 py-3 rounded-lg font-medium bg-primary-500 hover:bg-primary-600 text-white transition"
+              >
+                Download CV (PDF)
+              </button>
+            </div>
           </div>
-        </div> */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Download Resume (Bahasa Indonesia)</h3>
+            <div className="p-6 rounded-lg bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center transition-colors duration-300">
+              <Download size={48} className="mb-4 text-primary-500" />
+              <button 
+                onClick={() => handleDownload(cvID, 'Windi_Saputra_Resume_ID.pdf')}
+                className="px-6 py-3 rounded-lg font-medium bg-primary-500 hover:bg-primary-600 text-white transition"
+              >
+                Download CV (PDF)
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

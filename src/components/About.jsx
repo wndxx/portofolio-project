@@ -1,7 +1,9 @@
 export default function About() {
     return (
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 border-b pb-2">About Me</h2>
+        <h2 className="text-2xl font-bold mb-8 text-center dark:text-white border-b pb-2">
+        About <span className="text-primary-500">Me</span>
+      </h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">Education</h3>

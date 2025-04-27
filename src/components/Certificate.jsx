@@ -7,8 +7,10 @@ export default function Certificate() {
   const [selectedCert, setSelectedCert] = useState(null);
 
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold text-center mb-8">My Certificates</h2>
+    <section className="mb-12">
+      <h2 className="text-2xl font-bold mb-8 text-center dark:text-white border-b pb-2">
+        My <span className="text-primary-500">Certificates</span>
+      </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {certificates.map((cert) => (
