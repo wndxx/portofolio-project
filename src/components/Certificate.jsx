@@ -44,10 +44,6 @@ function CertificateCard({ cert, onClick }) {
           src={cert.imageUrl} 
           alt={cert.title}
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-          onError={(e) => {
-            e.target.src = 'https://via.placeholder.com/400x300?text=Certificate+Image';
-            e.target.className = 'w-full h-full object-contain p-4 bg-gray-100 dark:bg-gray-700';
-          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
           <span className="text-white font-medium">Click to View</span>
