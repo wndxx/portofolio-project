@@ -4,7 +4,7 @@ export default function ProjectCard({ project }) {
       href={project.externalLink} 
       target="_blank" 
       rel="noopener noreferrer"
-      className="block rounded-lg overflow-hidden shadow-lg transition transform hover:scale-105 bg-white dark:bg-gray-800 hover:shadow-xl"
+      className="block rounded-3xl overflow-hidden shadow-lg transition transform hover:scale-105 bg-white dark:bg-gray-800 hover:shadow-xl"
     >
       {/* Bagian gambar/thumbnail */}
       <div className="h-48 bg-gray-200 dark:bg-gray-700 flex items-center justify-center overflow-hidden">

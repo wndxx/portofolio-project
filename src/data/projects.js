@@ -4,18 +4,18 @@ import trashbin from "../assets/projects/trashbin.jfif"
 import bmi from "../assets/projects/bmi.png"
 
 export default [
-    {
-      title: "Automatic Trash Can",
-      description: "Built using Arduino and HCSR04 sensor to automatically open when detecting human presence.",
-      technologies: ["Arduino", "Arduino IDE", "Ultrasonic Sensor"],
-      localImage: trashbin ,
-      externalLink: "https://jurnal.ubd.ac.id/index.php/rubin/article/download/2092/1386/6353"
-    },
+    // {
+    //   title: "Automatic Trash Can",
+    //   description: "Built using Arduino and HCSR04 sensor to automatically open when detecting human presence.",
+    //   technologies: ["Arduino", "Arduino IDE", "Ultrasonic Sensor"],
+    //   localImage: trashbin ,
+    //   externalLink: "https://jurnal.ubd.ac.id/index.php/rubin/article/download/2092/1386/6353"
+    // },
     {
       title: "HikeMate",
       description:
         "A web application for managing mountain climbing tickets with user authentication and booking system.",
-      technologies: ["Reactjs", "Nodejs", "Java Spring Boot", "PostgreSQL"],
+      technologies: ["React", "Node.js", "Java Spring Boot", "PostgreSQL"],
       localImage: mountain ,
       externalLink: "https://hikemate-z9e6.vercel.app/"
     },
@@ -29,7 +29,7 @@ export default [
     {
       title: "BMI Calculator",
       description: "A bmi calculator web application.",
-      technologies: ["Javascript", "Bootstrap", "ReactJs"],
+      technologies: ["Javascript", "Bootstrap", "React"],
       localImage: bmi ,
       externalLink: "https://bmi-calculator-gamma-eosin-82.vercel.app/"
     },

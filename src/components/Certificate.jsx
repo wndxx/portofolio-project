@@ -37,7 +37,7 @@ function CertificateCard({ cert, onClick }) {
   return (
     <div 
       onClick={onClick}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-[1.02] hover:shadow-xl border border-gray-200 dark:border-gray-700 cursor-pointer"
+      className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg overflow-hidden transition-transform hover:scale-[1.02] hover:shadow-xl border border-gray-200 dark:border-gray-700 cursor-pointer"
     >
       <div className="h-48 overflow-hidden relative">
         <img 

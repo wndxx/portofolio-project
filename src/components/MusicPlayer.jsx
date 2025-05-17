@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import musicFile from '../assets/audio/bgm.m4a';
+import musicFile from '../assets/audio/labyrinth.mp3';
 
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(true);

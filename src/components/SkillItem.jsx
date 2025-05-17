@@ -7,7 +7,7 @@ export default function SkillItem({ skill }) {
   const { class: levelClass, icon, bgClass } = skillLevels[skill.level];
   
   return (
-    <div className={`flex items-center gap-3 p-3 rounded-lg transition-all ${bgClass} hover:shadow-sm`}>
+    <div className={`flex items-center gap-3 p-3 rounded-3xl transition-all ${bgClass} hover:shadow-sm`}>
       <div className={`flex-1 flex items-center gap-2 ${levelClass}`}>
         <Check size={16} className="flex-shrink-0" />
         <span className="font-medium dark:text-white">{skill.name}</span>

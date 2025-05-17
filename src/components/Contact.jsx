@@ -35,7 +35,7 @@ export default function Contact() {
       <div className="grid md:grid-cols-2 gap-8">
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
-          <div className="p-6 rounded-lg bg-gray-100 dark:bg-gray-800 space-y-4 transition-colors duration-300">
+          <div className="p-6 rounded-3xl bg-gray-100 dark:bg-gray-800 space-y-4 transition-colors duration-300">
             {contactItems.map((item, index) => (
               <div key={index} className="flex items-center">
                 {item.icon}
@@ -59,11 +59,11 @@ export default function Contact() {
         <div className="md:col-span-2 grid md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">Download Resume (English)</h3>
-            <div className="p-6 rounded-lg bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center transition-colors duration-300">
+            <div className="p-6 rounded-3xl bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center transition-colors duration-300">
               <Download size={48} className="mb-4 text-primary-500" />
               <button 
                 onClick={() => handleDownload(cvEN, 'Windi_Saputra_Resume_EN.pdf')}
-                className="px-6 py-3 rounded-lg font-medium bg-primary-500 hover:bg-primary-600 text-white transition"
+                className="px-6 py-3 rounded-3xl font-medium bg-primary-500 hover:bg-primary-600 text-white transition"
               >
                 Download CV (PDF)
               </button>
@@ -71,11 +71,11 @@ export default function Contact() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Download Resume (Bahasa Indonesia)</h3>
-            <div className="p-6 rounded-lg bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center transition-colors duration-300">
+            <div className="p-6 rounded-3xl bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center transition-colors duration-300">
               <Download size={48} className="mb-4 text-primary-500" />
               <button 
                 onClick={() => handleDownload(cvID, 'Windi_Saputra_Resume_ID.pdf')}
-                className="px-6 py-3 rounded-lg font-medium bg-primary-500 hover:bg-primary-600 text-white transition"
+                className="px-6 py-3 rounded-3xl font-medium bg-primary-500 hover:bg-primary-600 text-white transition"
               >
                 Download CV (PDF)
               </button>

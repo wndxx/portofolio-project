@@ -2,11 +2,12 @@
 export const technicalSkills = [
     { name: "HTML/CSS", level: "Checklist" },
     { name: "JavaScript", level: "Checklist" },
-    { name: "React.js", level: "Checklist" },
+    { name: "React", level: "Checklist" },
     { name: "Node.js", level: "Checklist" },
     { name: "SQL", level: "Checklist" },
     { name: "Java", level: "Checklist" },
-    { name: "Python", level: "Checklist" }
+    { name: "Python", level: "Checklist" },
+    { name: "Next.js", level: "Checklist" }
   ];
   
   export const skillLevels = {
