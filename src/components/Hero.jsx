@@ -90,7 +90,7 @@ export default function Hero({ setActiveSection }) {
             {showButton && (
               <button
                 onClick={() => setActiveSection("contact")}
-                className="px-6 py-3 text-lg md:text-xl rounded-lg font-medium bg-primary-500 hover:bg-primary-600 text-white transition transform hover:scale-105"
+                className="px-6 py-3 text-lg md:text-xl rounded-3xl font-medium bg-primary-500 hover:bg-primary-600 text-white transition transform hover:scale-105"
               >
                 Contact Me
               </button>
