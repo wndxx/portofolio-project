@@ -1,6 +1,6 @@
 import { Mail, Phone, Github, Linkedin, Download } from "lucide-react";
-import cvEN from '../assets/cv/eng.pdf';
-import cvID from '../assets/cv/ind.pdf';
+import cvEN from '../assets/cv/cv_windi-saputra_inggris.pdf';
+import cvID from '../assets/cv/cv_windi-saputra_indonesia.pdf';
 
 export default function Contact() {
   const contactItems = [
