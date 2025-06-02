@@ -21,6 +21,10 @@ export default function Portfolio() {
           <>
             <Hero setActiveSection={setActiveSection} />
             <About />
+            <Projects/>
+            <Skills/>
+            <Certificate/>
+            <Contact/>
           </>
         );
       case "projects":
