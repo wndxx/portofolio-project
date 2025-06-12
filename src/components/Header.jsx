@@ -30,7 +30,7 @@ export default function Header({ activeSection, setActiveSection }) {
 
   return (
     <header className={`
-      sticky top-0 z-50 bg-white transition-colors duration-300
+      sticky top-0 z-50 transition-colors duration-300
       
       ${isScrolled
         ? 'bg-white dark:bg-gray-800 backdrop-blur-md shadow-md'
