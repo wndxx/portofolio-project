@@ -1,9 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ThemeToggle from "./ThemeToggle";
 import { Menu, X } from 'lucide-react';
 
 export default function Header({ activeSection, setActiveSection }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   const navItems = [
     { id: "about", label: "About" },
     { id: "projects", label: "Projects" },
@@ -18,7 +29,13 @@ export default function Header({ activeSection, setActiveSection }) {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md transition-colors duration-300">
+    <header className={`
+      sticky top-0 z-50 bg-white transition-colors duration-300
+      
+      ${isScrolled
+        ? 'bg-white dark:bg-gray-800 backdrop-blur-md shadow-md'
+        : 'bg-transparent'}
+    `}>
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">

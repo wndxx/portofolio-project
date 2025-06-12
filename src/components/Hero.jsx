@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import pp from '../assets/profile/windipp.JPG';
-import videoBg from '../../public/video/evangelion1.mp4'; 
+import Video from './Video';
 
 export default function Hero({ setActiveSection }) {
   const [showH3, setShowH3] = useState(false);
@@ -32,25 +32,11 @@ export default function Hero({ setActiveSection }) {
   }, []);
 
   return (
-    <section className="relative mb-12 py-12 flex items-center min-h-[80vh] md:min-h-screen overflow-x-hidden">
-      {/* Background Video - Responsif */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="min-w-full min-h-full object-cover scale-110"
-          style={{ transform: 'scale(1.5)' }}
-        >
-          <source src={videoBg} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
-      </div>
+    <section className="min-h-screen flex items-center overflow-hidden">
+      <Video/>
 
       {/* Konten - Responsif */}
-      <div className="w-full px-[4vw] relative z-10">
+      <div className="relative z-10 w-full px-6 md:px-12">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Bagian Teks */}
           <div className="w-full md:w-1/2 text-center md:text-left">
