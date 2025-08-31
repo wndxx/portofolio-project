@@ -1,4 +1,4 @@
-import videoBg from '../../public/video/evangelion1.mp4'; 
+import videoBg from '../../public/video/dandadanbackground.mp4'; 
 
 export default function Video(){
 

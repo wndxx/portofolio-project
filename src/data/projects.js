@@ -2,6 +2,7 @@ import mountain from "../assets/projects/mountain.png"
 import fruit from "../assets/projects/fruitCatcher.png"
 import trashbin from "../assets/projects/trashbin.jfif"
 import bmi from "../assets/projects/bmi.png"
+import peneleh from "../assets/projects/penerbit_peneleh.png"
 
 export default [
     // {
@@ -11,6 +12,13 @@ export default [
     //   localImage: trashbin ,
     //   externalLink: "https://jurnal.ubd.ac.id/index.php/rubin/article/download/2092/1386/6353"
     // },
+    {
+      title: "Penerbit Peneleh Landing Page (Published Soon)",
+      description: "A Landing page website for Penerbit Peneleh, an independent publisher based in Indonesia. On this work, I was responsible for developing the front-end using Next.js for landing page for several menus and for the admin dashboard for several menus.",
+      technologies: ["Next.js", "GoLang"],
+      localImage: peneleh 
+      // externalLink: "https://bmi-calculator-gamma-eosin-82.vercel.app/"
+    },
     {
       title: "HikeMate",
       description:
@@ -26,11 +34,11 @@ export default [
       localImage: fruit ,
       externalLink: "https://github.com/wndxx/fruit-catcher"
     },
-    {
-      title: "BMI Calculator",
-      description: "A bmi calculator web application.",
-      technologies: ["Javascript", "Bootstrap", "React"],
-      localImage: bmi ,
-      externalLink: "https://bmi-calculator-gamma-eosin-82.vercel.app/"
-    },
+    // {
+    //   title: "BMI Calculator",
+    //   description: "A bmi calculator web application.",
+    //   technologies: ["Javascript", "Bootstrap", "React"],
+    //   localImage: bmi ,
+    //   externalLink: "https://bmi-calculator-gamma-eosin-82.vercel.app/"
+    // },
   ];

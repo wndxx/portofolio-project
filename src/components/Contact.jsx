@@ -1,6 +1,7 @@
 import { Mail, Phone, Github, Linkedin, Download } from "lucide-react";
 import cvEN from '../assets/cv/cv_windi-saputra_inggris.pdf';
 import cvID from '../assets/cv/cv_windi-saputra_indonesia.pdf';
+import cvFrontEnd from '../assets/cv/cv_front-end.pdf';
 
 export default function Contact() {
   const contactItems = [
@@ -58,18 +59,18 @@ export default function Contact() {
         
         <div className="md:col-span-2 grid md:grid-cols-2 gap-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Download Resume (English)</h3>
+            <h3 className="text-xl font-semibold mb-4">Download Resume</h3>
             <div className="p-6 rounded-3xl bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center transition-colors duration-300">
               <Download size={48} className="mb-4 text-primary-500" />
               <button 
-                onClick={() => handleDownload(cvEN, 'Windi_Saputra_Resume_EN.pdf')}
+                onClick={() => handleDownload(cvFrontEnd, 'cv_front-end.pdf')}
                 className="px-6 py-3 rounded-3xl font-medium bg-primary-500 hover:bg-primary-600 text-white transition"
               >
                 Download CV (PDF)
               </button>
             </div>
           </div>
-          <div>
+          {/* <div>
             <h3 className="text-xl font-semibold mb-4">Download Resume (Bahasa Indonesia)</h3>
             <div className="p-6 rounded-3xl bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center transition-colors duration-300">
               <Download size={48} className="mb-4 text-primary-500" />
@@ -80,7 +81,7 @@ export default function Contact() {
                 Download CV (PDF)
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
