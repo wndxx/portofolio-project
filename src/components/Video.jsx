@@ -1,4 +1,5 @@
-import videoBg from '../../public/video/dandadanbackground.mp4'; 
+// import videoBg from '../../public/video/dandadanbackground.mp4';
+import videoBg from '../../public/video/dandadanbackground.webm'; 
 
 export default function Video(){
 
@@ -12,7 +13,8 @@ export default function Video(){
           className="absolute inset-0 w-full h-full object-cover"
           style={{ transform: 'scale(1.5)' }}
         >
-          <source src={videoBg} type="video/mp4" />
+          {/* <source src={videoBg} type="video/mp4" /> */}
+          <source src={videoBg} type="video/webm" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
