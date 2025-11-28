@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 export default function NoteDetail({ note, setActiveSection, detailOrigin }) {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   if (!note) return null;
 
   return (
