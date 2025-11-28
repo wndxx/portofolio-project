@@ -10,9 +10,13 @@ import Footer from "./components/Footer.jsx";
 import Certificate from "./components/Certificate.jsx";
 import MusicPlayer from "./components/MusicPlayer.jsx";
 import MusicNotification from "./components/MusicNotification.jsx";
+import NoteDetail from "./components/NoteDetail.jsx";
+import NotesPage from "./components/NotesPage.jsx";
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("about");
+  const [selectedNote, setSelectedNote] = useState(null);
+  const [detailOrigin, setDetailOrigin] = useState(null);
 
   const renderSection = () => {
     switch (activeSection) {
@@ -24,9 +28,36 @@ export default function Portfolio() {
             <Projects/>
             <Skills/>
             <Certificate/>
+            <div id="notes-section">
+              <NotesPage 
+                setSelectedNote={setSelectedNote}
+                setActiveSection={setActiveSection}
+                setDetailOrigin={setDetailOrigin}
+                origin="about"
+              />
+            </div>
             <Contact/>
           </>
         );
+        case "notes":
+        return (
+          <NotesPage 
+            setSelectedNote={setSelectedNote}
+            setActiveSection={setActiveSection}
+            setDetailOrigin={setDetailOrigin}
+            origin="notes"
+          />
+        );
+
+      case "note-detail":
+        return (
+          <NoteDetail 
+            note={selectedNote}
+            setActiveSection={setActiveSection}
+            detailOrigin={detailOrigin}
+          />
+        );
+
       case "projects":
         return <Projects />;
       case "skills":

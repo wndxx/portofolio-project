@@ -52,7 +52,7 @@ export default function Hero({ setActiveSection }) {
             {showH3 && (
               <h3 className="text-xl md:text-3xl lg:text-4xl text-primary-500 mb-4">
                 <Typewriter
-                  words={['Front End Programmer']}
+                  words={['Web App Developer']}
                   typeSpeed={60}
                   delaySpeed={500}
                   cursor={showCursorH3}

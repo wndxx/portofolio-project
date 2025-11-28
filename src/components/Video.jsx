@@ -1,5 +1,6 @@
 // import videoBg from '../../public/video/dandadanbackground.mp4';
 import videoBg from '../../public/video/dandadanbackground.webm'; 
+import thumbnail from '../../public/video/momo.jpg'; 
 
 export default function Video(){
 
@@ -10,6 +11,7 @@ export default function Video(){
           loop 
           muted 
           playsInline
+          poster={thumbnail}
           className="absolute inset-0 w-full h-full object-cover"
           style={{ transform: 'scale(1.5)' }}
         >
