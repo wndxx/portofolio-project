@@ -22,7 +22,7 @@ export default function About() {
               <p>Here, my role is as a full-stack developer developing a multi-financing application with a "clean architecture" and implementing 
                 microservices under the project name "360." My job here is to create the API and interface for this application across various 
                 modules such as loan origination, operating leases, and others. </p>
-              <p className="text-sm mt-2">2024 - Now</p>
+              <p className="text-sm mt-2">2025 - Now</p>
             </div>
           </div>
           
