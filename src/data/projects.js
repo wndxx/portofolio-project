@@ -15,7 +15,7 @@ export default [
     {
       title: "Penerbit Peneleh Landing Page (Published Soon)",
       description: "A Landing page website for Penerbit Peneleh, an independent publisher based in Indonesia. On this work, I was responsible for developing the front-end using Next.js for landing page for several menus and for the admin dashboard for several menus.",
-      technologies: ["Next.js", "GoLang"],
+      technologies: ["Next.js", "GoLang", "PostgreSQL", "Tailwind CSS"],
       localImage: peneleh 
       // externalLink: "https://bmi-calculator-gamma-eosin-82.vercel.app/"
     },
@@ -32,7 +32,7 @@ export default [
       description: "A desktop game that uses hand gesture tracking technology to move the cursor with certain gestures. The purpose of making this game is to help children with Down syndrome stimulate their fine motor skills.",
       technologies: ["Python", "MediaPipe", "OpenCV", "NumPy", "PyGame"],
       localImage: fruit ,
-      externalLink: "https://github.com/wndxx/fruit-catcher"
+      // externalLink: "https://github.com/wndxx/fruit-catcher"
     },
     // {
     //   title: "BMI Calculator",

@@ -1,12 +1,12 @@
 // src/data/skills.js
 export const technicalSkills = [
-    { name: "HTML/CSS", level: "Checklist" },
-    { name: "JavaScript", level: "Checklist" },
+    { name: ".NET (C#)", level: "Checklist" },
+    { name: "Blazor", level: "Checklist" },
     { name: "React", level: "Checklist" },
-    { name: "Node.js", level: "Checklist" },
+    // { name: "Microservice", level: "Checklist" },
     { name: "SQL", level: "Checklist" },
     { name: "Java", level: "Checklist" },
-    { name: "Python", level: "Checklist" },
+    // { name: "Python", level: "Checklist" },
     { name: "Next.js", level: "Checklist" }
   ];
   

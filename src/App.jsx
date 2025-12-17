@@ -27,7 +27,7 @@ export default function Portfolio() {
             <About />
             <Projects/>
             <Skills/>
-            <Certificate/>
+            {/* <Certificate/> */}
             <div id="notes-section">
               <NotesPage 
                 setSelectedNote={setSelectedNote}

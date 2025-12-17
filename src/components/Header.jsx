@@ -19,7 +19,7 @@ export default function Header({ activeSection, setActiveSection }) {
     { id: "about", label: "About" },
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
-    { id: "certificates", label: "Certificates" },
+    // { id: "certificates", label: "Certificates" },
     { id: "contact", label: "Contact" }
   ];
 
